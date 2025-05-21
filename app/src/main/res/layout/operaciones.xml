@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="50dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:text="Operaciones Matemáticas"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/operac_spinner"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:entries="@array/operaciones"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/etValor1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="Ingrese el valor 1"
+        android:padding="13dp"
+        android:background="@drawable/border"
+        android:inputType="numberDecimal" />
+    <EditText
+        android:id="@+id/etValor2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="Ingrese el valor 2"
+        android:padding="13dp"
+        android:background="@drawable/border"
+        android:inputType="numberDecimal" />
+    <EditText
+        android:id="@+id/etValor3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:hint="Ingrese el valor 3"
+        android:padding="13dp"
+        android:background="@drawable/border"
+        android:inputType="numberDecimal" />
+    <Button
+        android:id="@+id/btnValor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:textSize="16sp"
+        android:padding="15dp"
+        android:layout_marginBottom="40dp"
+        />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center" />
+
+</LinearLayout>
